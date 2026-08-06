@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Prenotazione Uscite</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+  }
+
+  /* BANDIERA ISRAELE */
+  header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    position: relative;
+  }
+
+  .stripe {
+    width: 100%;
+    height: 40px;
+    background: #0038b8;
+  }
+
+  .stripe.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .stripe.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .star {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .star:before,
+  .star:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid #0038b8;
+  }
+
+  .star:after {
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+
+  main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0038b8;
+    background: #f5f8ff;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #0038b8;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #0038b8;
+    box-sizing: border-box;
+  }
+
+  button {
+    background: #0038b8;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #002a86;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 12px;
+    color: #555;
+  }
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="stripe top"></div>
+  <div class="star"></div>
+  <h1>Prenotazione Uscite Speciali</h1>
+  <p>Scegli l’esperienza e invia la richiesta</p>
+  <div class="stripe bottom"></div>
+</header>
+
+<main>
+  <form action="https://formsubmit.co/uehehticink@gmail.com" method="POST">
+
+    <label>Nome e cognome</label>
+    <input type="text" name="Nome" required>
+
+    <label>Email</label>
+    <input type="email" name="Email" required>
+
+    <label>Tipo di uscita</label>
+    <select name="Uscita" required>
+      <option value="">-- Seleziona --</option>
+      <option value="Monstere in camera di Bibi Yahu">Monstere in camera di Bibi Yahu</option>
+      <option value="Cenetta speciale">Cenetta speciale</option>
+      <option value="Uscita Cappella Sistina gelata">Uscita Cappella Sistina gelata</option>
+      <option value="Tour delle cripte">Tour delle cripte</option>
+      <option value="Baci e coccole">Baci e coccole</option>
+    </select>
+
+    <label>Data preferita</label>
+    <input type="text" name="Data" placeholder="Es. 15/08/2026, sera">
+
+    <label>Note aggiuntive</label>
+    <textarea name="Note" placeholder="Scrivi richieste particolari..."></textarea>
+
+    <!-- Protezione spam -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Pagina di conferma -->
+    <input type="hidden" name="_next" value="https://google.com">
+
+    <button type="submit">Invia richiesta</button>
+  </form>
+</main>
+
+<footer>
+  Le richieste verranno inviate a: uehehticink@gmail.com
+</footer>
+
+</body>
+</html>
