@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Prenotazione Serate/Uscite tra fratelli</title>
+<title>Prenotazione Incontri/Uscite</title>
 
 <style>
   body {
@@ -11,55 +11,19 @@
     background: #ffffff;
   }
 
-  /* BANDIERA ISRAELE */
+  /* BANNER GIGANTE */
+  .banner {
+    width: 100%;
+    height: 250px; /* puoi aumentare se vuoi */
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+  }
+
   header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
     background: #ffffff;
-    position: relative;
-  }
-
-  .stripe {
-    width: 100%;
-    height: 40px;
-    background: #0038b8;
-  }
-
-  .stripe.top {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .stripe.bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-
-  .star {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .star:before,
-  .star:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 100px solid #0038b8;
-  }
-
-  .star:after {
-    transform: translate(-50%, -50%) rotate(180deg);
   }
 
   main {
@@ -113,18 +77,18 @@
 
 <body>
 
+<!-- BANNER GIGANTE -->
+<div class="banner"></div>
+
 <header>
-  <div class="stripe top"></div>
-  <div class="star"></div>
-  <h1>Prenotazione Serate/Uscite</h1>
-  <p>Scegli l’esperienza e invia la richiesta</p>
-  <div class="stripe bottom"></div>
+  <h1>Prenotazione Incontri/Uscite Tra Fratello</h1>
+  <p>Scegli testa di cipolla</p>
 </header>
 
 <main>
   <form action="https://formsubmit.co/uehehticink@gmail.com" method="POST">
 
-    <label>Nome</label>
+    <label>Nome e cognome</label>
     <input type="text" name="Nome" required>
 
     <label>Email</label>
@@ -134,22 +98,19 @@
     <select name="Uscita" required>
       <option value="">-- Seleziona --</option>
       <option value="Monstere in camera di Bibi Yahu">Monstere in camera di Bibi Yahu</option>
-      <option value="Cenetta speciale">Cenetta da froci</option>
+      <option value="Cenetta speciale">Cenetta tra Froci</option>
       <option value="Uscita Cappella Sistina gelata">Uscita Cappella Gelata</option>
       <option value="Tour delle cripte">Tour delle cripte</option>
-      <option value="Baci e coccole">Bocchini Gratis</option>
+      <option value="Baci e coccole">Bocacciucci gratis</option>
     </select>
 
     <label>Data preferita</label>
-    <input type="text" name="Data" placeholder="Es. **/**/****, sera">
+    <input type="text" name="Data" placeholder="Es. 15/08/2026, sera">
 
     <label>Note aggiuntive</label>
     <textarea name="Note" placeholder="Scrivi richieste particolari..."></textarea>
 
-    <!-- Protezione spam -->
     <input type="hidden" name="_captcha" value="false">
-
-    <!-- Pagina di conferma -->
     <input type="hidden" name="_next" value="https://google.com">
 
     <button type="submit">Invia richiesta</button>
@@ -157,7 +118,7 @@
 </main>
 
 <footer>
-  Le richieste verranno inviate a claudio 
+  Le richieste verranno inviate a: uehehticink@gmail.com
 </footer>
 
 </body>
